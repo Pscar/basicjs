@@ -1,30 +1,30 @@
-const getArray = () => {
-  let arrayNumber = [1, 2, 3, 4, 5];
-  console.log(arrayNumber);
-  let isPrime = true;
+// const getArray = () => {
+//   let arrayNumber = [1, 2, 3, 4, 5];
+//   console.log(arrayNumber);
+//   let isPrime = true;
 
-  const map1 = arrayNumber.map((number) => {
-    let a = 0;
-    for (let i = 2; i < number; i++) {
-      if (number % i == 0) {
-        isPrime = false;
-        break;
-      }
-    }
-    if (isPrime) {
-      a += 5;
-    } else if (number % 2 === 0) {
-      a += 1;
-    } else if (number % 2 !== 0) {
-      a += 3;
-    }
-    return a;
-  });
-  console.log(map1);
-  const sum = map1.reduce((previous, current) => previous + current, 0);
-  console.log(sum);
-};
-getArray();
+//   const map1 = arrayNumber.map((number) => {
+//     let a = 0;
+//     for (let i = 2; i < number; i++) {
+//       if (number % i == 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) {
+//       a += 5;
+//     } else if (number % 2 === 0) {
+//       a += 1;
+//     } else if (number % 2 !== 0) {
+//       a += 3;
+//     }
+//     return a;
+//   });
+//   console.log(map1);
+//   const sum = map1.reduce((previous, current) => previous + current, 0);
+//   console.log(sum);
+// };
+// getArray();
 
 const sumArray = () => {
   let arrayNumber = [1, 2, 3, 4, 5];
